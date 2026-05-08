@@ -73,6 +73,13 @@ You also get a condensed summary of conflicts with other packages you have loade
 library(tidyverse)
 ```
 
+To suppress the startup message, use:
+
+```{r eval = FALSE}
+options(tidyverse.quiet = TRUE)
+library(tidyverse)
+```
+
 You can see conflicts created later with `tidyverse_conflicts()`:
 
 ```{r conflicts}
